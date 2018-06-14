@@ -1,0 +1,40 @@
+{
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "default_title": "ProtoBuf Tester"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval';default-src 'self'; connect-src * filesystem: file:; style-src * blob: data: filesystem: 'unsafe-inline'; img-src *; frame-src * blob: data: filesystem:; font-src * blob: data: filesystem:; media-src *;",
+  "web_accessible_resources": [
+    "scripts/index.js",
+    "devtools-background.html",
+    "devtools.html"
+  ],
+  "default_locale": "en",
+  "devtools_page": "devtools-background.html",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "manifest_version": 2,
+  "name": "ProtoBuf Tester",
+  "offline_enabled": true,
+  "permissions": [
+    "cookies",
+    "storage",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "version": "1.0.0"
+}

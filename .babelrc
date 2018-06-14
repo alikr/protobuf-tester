@@ -1,0 +1,17 @@
+{
+  "presets": [
+    'stage-2',
+  	["env", {
+  		"targets": {
+        "browsers": ""
+      },
+      "debug": false,
+      "include": [
+      ]
+  	}]
+  ],
+  "plugins": [
+  	"transform-runtime"
+  ],
+  "comments": false
+}
